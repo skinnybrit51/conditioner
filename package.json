@@ -1,0 +1,9 @@
+{
+    "name": "conditioner",
+    "description": "Format, parse and validate values.",
+    "version": "0.0.1",
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}
