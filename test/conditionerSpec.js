@@ -37,4 +37,14 @@ describe('Conditioner', function () {
         expect(options.negativePrefixSymbol).to.equal('-');
         expect(options.negativeSuffixSymbol).to.equal('');
     });
+
+    it('Should have default options for date', function () {
+        var date = this.conditioner.date;
+        var options = date.options;
+        expect(_.keys(options)).to.have.length(3);
+        expect(options.rawFormat).to.equal('YYYY-MM-DD');
+        expect(_.keys(options.inputFormats)).to.have.length(1);
+        expect(options.inputFormats[0]).to.equal('MM/DD/YYYY');
+        expect(options.displayFormat).to.equal('MM/DD/YYYY');
+    });
 });
