@@ -23,7 +23,7 @@ describe('Date', function () {
         it('Should parse the date', function () {
             var baseDate = new BaseDate();
             expect(baseDate.parse('12/25/2014')).to.equal('2014-12-25');
-            expect(baseDate.parse('')).to.equal('');
+            expect(baseDate.parse('')).to.equal(null);
             expect(baseDate.parse(null)).to.equal(null);
         });
 

@@ -1,7 +1,7 @@
 {
   "name": "conditioner",
   "description": "Format, parse and validate values.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.js",
   "keywords": [],
   "repository": {
