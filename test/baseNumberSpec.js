@@ -100,6 +100,16 @@ describe('Base Number', function () {
             expect(baseNumber.format(100000)).to.equal('10,00,00.00');
             expect(baseNumber.format(1000000)).to.equal('1,00,00,00.00');
 
+            // change group interval
+            baseNumber = new BaseNumber({
+                groupIntervalAmount: 0
+            });
+            expect(baseNumber.format(10)).to.equal('10.00');
+
+            baseNumber = new BaseNumber({
+                groupIntervalAmount: null
+            });
+            expect(baseNumber.format(10)).to.equal('10.00');
         });
 
         it('Should display group symbol', function () {
